@@ -1,0 +1,299 @@
+@import "vars";
+@import "libs";
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&family=Poppins:wght@500&display=swap");
+@import "global";
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  color: #0a2530;
+  padding-bottom: 36px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  border: 0;
+  background: transparent;
+  transition: 0.3s all ease;
+  padding: 0;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+a {
+  transition: 0.3s all ease;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.btn {
+  width: 100%;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: 4px;
+  background: #083644;
+  color: #fff;
+  font-weight: 500;
+
+  &:disabled {
+    pointer-events: none;
+    user-select: none;
+    opacity: 0.7;
+  }
+
+  &:focus {
+    background: #0a2530;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+// header
+.header {
+  background: #083644;
+
+  &__panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 62px;
+  }
+
+  &__btn {
+    &-back {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: #fff;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+}
+
+// main
+.main {
+  padding-top: 16px;
+}
+
+// form
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  &__group {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__field {
+    width: 100%;
+
+    .error {
+      color: red;
+      font-size: 12px;
+      margin-top: 4px;
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+
+  &__input,
+  &__select {
+    height: 42px;
+    width: 100%;
+    border: 1px solid #edeef0;
+    border-radius: 4px;
+    background: #fff;
+    outline: none;
+    color: #000;
+    padding: 0 14px;
+    transition: 0.3s all ease;
+
+    &:focus {
+      border-color: rgba(#000, 0.6);
+    }
+  }
+
+  &__input {
+    &::placeholder {
+      color: #6c7072;
+    }
+  }
+
+  &__select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url("/img/icons/components/form/select/arrow.svg") no-repeat
+      right 14px center / 24px;
+    padding-right: 40px;
+    cursor: pointer;
+
+    &:invalid {
+      color: #6c7072;
+    }
+  }
+}
+
+// cards
+.cards {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 12px;
+}
+
+.card {
+  width: calc(50% - 6px);
+
+  &__head {
+    position: relative;
+  }
+
+  &__img {
+    border-radius: 8px;
+    width: 100%;
+  }
+
+  &__btn {
+    &-wishlist {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: #fff;
+      border-radius: 4px;
+    }
+
+    &-add {
+      background: #0a2530;
+
+      img {
+        transition: 0.3s all ease;
+      }
+
+      &_active {
+        img {
+          transform: rotate(45deg);
+        }
+      }
+
+      &:focus {
+        background: #083644;
+      }
+    }
+  }
+
+  &__content {
+    margin-top: 8px;
+    font-size: 14px;
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  &__artist {
+    margin-top: 4px;
+    font-weight: 500;
+  }
+
+  &__info {
+    margin-top: 7px;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+
+      &:not(:last-child) {
+        margin-bottom: 3px;
+      }
+
+      span {
+        color: #738286;
+      }
+    }
+  }
+
+  &__footer {
+    margin-top: 11px;
+  }
+}
+
+// pagination
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  font-family: "Poppins", sans-serif;
+
+  &__item,
+  &__divider {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    color: #738286;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+
+    &:focus {
+      background: #083644;
+      color: #fff;
+    }
+
+    &_active {
+      background: #0a2530;
+      color: #fff;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  &__divider {
+    pointer-events: none;
+  }
+}
+
+@import "media";

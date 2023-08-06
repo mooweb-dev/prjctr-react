@@ -1,0 +1,49 @@
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+a, a:hover, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+input, input:focus, button, button:focus {
+  outline: none;
+}
+
+div, p, form, input, a, span, button, textarea {
+	box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+a, a:hover, button, button:hover {
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+svg {
+  fill: currentColor;
+}
+
+label {
+  margin: 0;
+}
+
+button {
+  border: none;
+}
+
+.slick-slide:active, .slick-slide:hover, .slick-slide:focus {
+  outline: 0;
+}

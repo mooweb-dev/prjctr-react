@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Arial';
+  src: url('../fonts/Arial.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Arial.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Arial.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Arial.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Arial.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Arial.svg#Arial') format('svg'); /* Legacy iOS */
+}

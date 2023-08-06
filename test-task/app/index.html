@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#083644" />
+    <meta name="theme-color" content="#083644" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Test task</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__panel">
+          <button class="header__btn-back" id="backButton">
+            <img src="img/icons/components/header/arrow.svg" alt="Arrow" />
+
+            Back
+          </button>
+          <!--header__btn-back -->
+
+          <div class="header__btns">
+            <button class="header__btns-item">
+              <img src="img/icons/components/header/heart.svg" alt="heart" />
+            </button>
+            <!-- header__btns-item -->
+
+            <button class="header__btns-item">
+              <img src="img/icons/components/header/folder.svg" alt="folder" />
+            </button>
+            <!-- header__btns-item -->
+          </div>
+          <!-- header__btns -->
+        </div>
+        <!-- header__panel -->
+      </div>
+      <!-- container -->
+    </header>
+    <!-- header -->
+
+    <main class="main">
+      <section class="section-form">
+        <div class="container">
+          <form action="#!" class="form">
+            <fieldset class="form__group">
+              <div class="form__field">
+                <input
+                  type="text"
+                  name="artist"
+                  placeholder="Artist"
+                  class="form__input"
+                  id="artistField"
+                />
+
+                <span class="error"
+                  >Максимальна довжина рядка 10 символів!</span
+                >
+              </div>
+              <!-- form__field -->
+            </fieldset>
+            <!-- form__group -->
+
+            <fieldset class="form__group">
+              <div class="form__field">
+                <select name="genre" class="form__select" required>
+                  <option value="" selected disabled hidden>Genre</option>
+                  <option value="Genre 1">Genre 1</option>
+                  <option value="Genre 2">Genre 2</option>
+                  <option value="Genre 3">Genre 3</option>
+                  <option value="Genre 4">Genre 4</option>
+                </select>
+              </div>
+              <!-- form__field -->
+
+              <div class="form__field">
+                <select name="decade" class="form__select" required>
+                  <option value="" selected disabled hidden>Decade</option>
+                  <option value="1950-60 рр.">1950-60 рр.</option>
+                  <option value="1960-70 рр.">1960-70 рр.</option>
+                  <option value="1970-80 рр.">1970-80 рр.</option>
+                  <option value="1980-90 рр.">1980-90 рр.</option>
+                  <option value="1990-00 рр.">1990-00 рр.</option>
+                  <option value="2000-10 рр.">2000-10 рр.</option>
+                  <option value="2010-20 рр.">2010-20 рр.</option>
+                  <option value="2020-30 рр.">2020-30 рр.</option>
+                </select>
+              </div>
+              <!-- form__field -->
+            </fieldset>
+            <!-- form__group -->
+
+            <fieldset class="form__group">
+              <div class="form__field">
+                <select
+                  name="country"
+                  placeholder="Country"
+                  class="form__select"
+                  required
+                >
+                  <option value="" selected disabled hidden>Country</option>
+                  <option value="Ukraine">Ukraine</option>
+                  <option value="Country 2">Country 2</option>
+                  <option value="Country 3">Country 3</option>
+                  <option value="Country 4">Country 4</option>
+                </select>
+              </div>
+              <!-- form__field -->
+            </fieldset>
+            <!-- form__group -->
+
+            <fieldset class="form__group">
+              <button type="submit" class="btn" id="searchButton">
+                Search
+              </button>
+            </fieldset>
+            <!-- form__group -->
+          </form>
+          <!-- form -->
+        </div>
+      </section>
+      <!-- section-form -->
+
+      <section class="section-cards">
+        <div class="container">
+          <div class="cards">
+            <div class="card" data-card-id="0">
+              <div class="card__head">
+                <button class="card__btn-wishlist">
+                  <img src="img/icons/components/card/heart.svg" alt="Heart" />
+                </button>
+                <!-- card__btn-wishlist -->
+
+                <img
+                  src="img/images/components/card/1.png"
+                  alt="Img"
+                  class="card__img"
+                />
+                <!-- card__img -->
+              </div>
+              <!-- card__head -->
+
+              <div class="card__content">
+                <h2 class="card__title">Let There Be Rock</h2>
+                <!-- card__title -->
+
+                <p class="card__artist">AC/DC</p>
+                <!-- card__artist -->
+
+                <ul class="card__info">
+                  <li class="card__info-item"><span>Year:</span>1990</li>
+
+                  <li class="card__info-item">
+                    <span>Style:</span>Punk, Dub, Funk
+                  </li>
+
+                  <li class="card__info-item"><span>Country:</span>USA</li>
+                </ul>
+              </div>
+              <!-- card__content -->
+
+              <div class="card__footer">
+                <button class="btn card__btn-add">
+                  <span>Add</span>
+                  <img src="img/icons/components/card/plus.svg" alt="Plus" />
+                </button>
+              </div>
+              <!-- card__footer -->
+            </div>
+            <!-- card -->
+
+            <div class="card" data-card-id="1">
+              <div class="card__head">
+                <button class="card__btn-wishlist">
+                  <img src="img/icons/components/card/heart.svg" alt="Heart" />
+                </button>
+                <!-- card__btn-wishlist -->
+
+                <img
+                  src="img/images/components/card/2.png"
+                  alt="Img"
+                  class="card__img"
+                />
+                <!-- card__img -->
+              </div>
+              <!-- card__head -->
+
+              <div class="card__content">
+                <h2 class="card__title">Let There Be Rock</h2>
+                <!-- card__title -->
+
+                <p class="card__artist">AC/DC</p>
+                <!-- card__artist -->
+
+                <ul class="card__info">
+                  <li class="card__info-item"><span>Year:</span>1990</li>
+
+                  <li class="card__info-item">
+                    <span>Style:</span>Punk, Dub, Funk
+                  </li>
+
+                  <li class="card__info-item"><span>Country:</span>USA</li>
+                </ul>
+              </div>
+              <!-- card__content -->
+
+              <div class="card__footer">
+                <button class="btn card__btn-add">
+                  <span>Add</span>
+                  <img src="img/icons/components/card/plus.svg" alt="Plus" />
+                </button>
+              </div>
+              <!-- card__footer -->
+            </div>
+            <!-- card -->
+
+            <div class="card" data-card-id="2">
+              <div class="card__head">
+                <button class="card__btn-wishlist">
+                  <img src="img/icons/components/card/heart.svg" alt="Heart" />
+                </button>
+                <!-- card__btn-wishlist -->
+
+                <img
+                  src="img/images/components/card/3.png"
+                  alt="Img"
+                  class="card__img"
+                />
+                <!-- card__img -->
+              </div>
+              <!-- card__head -->
+
+              <div class="card__content">
+                <h2 class="card__title">Let There Be Rock</h2>
+                <!-- card__title -->
+
+                <p class="card__artist">AC/DC</p>
+                <!-- card__artist -->
+
+                <ul class="card__info">
+                  <li class="card__info-item"><span>Year:</span>1990</li>
+
+                  <li class="card__info-item">
+                    <span>Style:</span>Punk, Dub, Funk
+                  </li>
+
+                  <li class="card__info-item"><span>Country:</span>USA</li>
+                </ul>
+              </div>
+              <!-- card__content -->
+
+              <div class="card__footer">
+                <button class="btn card__btn-add">
+                  <span>Add</span>
+                  <img src="img/icons/components/card/plus.svg" alt="Plus" />
+                </button>
+              </div>
+              <!-- card__footer -->
+            </div>
+            <!-- card -->
+
+            <div class="card" data-card-id="3">
+              <div class="card__head">
+                <button class="card__btn-wishlist">
+                  <img src="img/icons/components/card/heart.svg" alt="Heart" />
+                </button>
+                <!-- card__btn-wishlist -->
+
+                <img
+                  src="img/images/components/card/4.png"
+                  alt="Img"
+                  class="card__img"
+                />
+                <!-- card__img -->
+              </div>
+              <!-- card__head -->
+
+              <div class="card__content">
+                <h2 class="card__title">Let There Be Rock</h2>
+                <!-- card__title -->
+
+                <p class="card__artist">AC/DC</p>
+                <!-- card__artist -->
+
+                <ul class="card__info">
+                  <li class="card__info-item"><span>Year:</span>1990</li>
+
+                  <li class="card__info-item">
+                    <span>Style:</span>Punk, Dub, Funk
+                  </li>
+
+                  <li class="card__info-item"><span>Country:</span>USA</li>
+                </ul>
+              </div>
+              <!-- card__content -->
+
+              <div class="card__footer">
+                <button class="btn card__btn-add">
+                  <span>Add</span>
+                  <img src="img/icons/components/card/plus.svg" alt="Plus" />
+                </button>
+              </div>
+              <!-- card__footer -->
+            </div>
+            <!-- card -->
+
+            <div class="card" data-card-id="4">
+              <div class="card__head">
+                <button class="card__btn-wishlist">
+                  <img src="img/icons/components/card/heart.svg" alt="Heart" />
+                </button>
+                <!-- card__btn-wishlist -->
+
+                <img
+                  src="img/images/components/card/5.png"
+                  alt="Img"
+                  class="card__img"
+                />
+                <!-- card__img -->
+              </div>
+              <!-- card__head -->
+
+              <div class="card__content">
+                <h2 class="card__title">Let There Be Rock</h2>
+                <!-- card__title -->
+
+                <p class="card__artist">AC/DC</p>
+                <!-- card__artist -->
+
+                <ul class="card__info">
+                  <li class="card__info-item"><span>Year:</span>1990</li>
+
+                  <li class="card__info-item">
+                    <span>Style:</span>Punk, Dub, Funk
+                  </li>
+
+                  <li class="card__info-item"><span>Country:</span>USA</li>
+                </ul>
+              </div>
+              <!-- card__content -->
+
+              <div class="card__footer">
+                <button class="btn card__btn-add">
+                  <span>Add</span>
+                  <img src="img/icons/components/card/plus.svg" alt="Plus" />
+                </button>
+              </div>
+              <!-- card__footer -->
+            </div>
+            <!-- card -->
+
+            <div class="card" data-card-id="5">
+              <div class="card__head">
+                <button class="card__btn-wishlist">
+                  <img src="img/icons/components/card/heart.svg" alt="Heart" />
+                </button>
+                <!-- card__btn-wishlist -->
+
+                <img
+                  src="img/images/components/card/6.png"
+                  alt="Img"
+                  class="card__img"
+                />
+                <!-- card__img -->
+              </div>
+              <!-- card__head -->
+
+              <div class="card__content">
+                <h2 class="card__title">Let There Be Rock</h2>
+                <!-- card__title -->
+
+                <p class="card__artist">AC/DC</p>
+                <!-- card__artist -->
+
+                <ul class="card__info">
+                  <li class="card__info-item"><span>Year:</span>1990</li>
+
+                  <li class="card__info-item">
+                    <span>Style:</span>Punk, Dub, Funk
+                  </li>
+
+                  <li class="card__info-item"><span>Country:</span>USA</li>
+                </ul>
+              </div>
+              <!-- card__content -->
+
+              <div class="card__footer">
+                <button class="btn card__btn-add">
+                  <span>Add</span>
+                  <img src="img/icons/components/card/plus.svg" alt="Plus" />
+                </button>
+              </div>
+              <!-- card__footer -->
+            </div>
+            <!-- card -->
+          </div>
+          <!-- cards -->
+
+          <div class="pagination">
+            <span class="pagination__item pagination__item_active">1</span>
+            <!-- pagination__item -->
+
+            <a href="/?page=2" class="pagination__item">2</a>
+            <!-- pagination__item -->
+
+            <a href="/?page=3" class="pagination__item">3</a>
+            <!-- pagination__item -->
+
+            <span class="pagination__divider">...</span>
+            <!-- pagination__divider -->
+
+            <a href="/?page=8" class="pagination__item">8</a>
+            <!-- pagination__item -->
+          </div>
+          <!-- pagination -->
+        </div>
+        <!-- container -->
+      </section>
+      <!-- section-cards -->
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
